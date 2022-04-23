@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Erecruitment.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>VNM</title>
+
+    <link rel="icon" href="extra/Untitled.png" />
+    
+    <link href="extra/bootstrap.css" rel="stylesheet" />
+    <script src="extra/jquery-2.1.4.min.js"></script>
+    <script src="extra/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .footer{
+            bottom:0%;
+            margin-left:auto;
+            margin-right:auto;
+            height:100px;
+            width:100%;
+            position:fixed;
+            background-color:cyan;
+        }
+         
+        .auto-style1 {
+            width: 237px;
+            height: 76px;
+            text-align: center;
+            margin-right: 0px;
+            margin-top: 0px;
+           
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header >
+            <nav class = "navbar navbar-default" role = "navigation" style="background-color:lightcyan" >
+   
+               <div class = "navbar-header">
+                  <button type = "button" class = "navbar-toggle" 
+                     data-toggle = "collapse" data-target = "#example-navbar-collapse">
+                     <span class = "sr-only">Toggle navigation</span>
+                     <span class = "icon-bar"></span>
+                     <span class = "icon-bar"></span>
+                     <span class = "icon-bar"></span>
+                  </button>
+		
+                  <a class = "navbar-brand" href = "#">VNM</a>
+               </div>
+   
+               <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+	
+                  <ul class = "pull-right nav navbar-nav">
+                      <li><a href = "#">Candidate Profile</a></li>
+                      <li><a href = "#">Test Admin</a></li>
+                      <li><a href = "#">Test & Interviews</a></li>	
+                  </ul>
+               </div>
+                <img alt="" class="auto-style1" src="extra/Untitled.png" /></nav>
+
+        </header>
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <footer class="footer">
+            <div class="container">
+                &copy; VNM Recruitment Systems
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
